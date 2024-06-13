@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .shadow-box {
+    background-image: url('https://wallpaperaccess.com/full/5793534.jpg');
+    /* background-image: url('../../img/xyz.png'); */
+    background-size: cover;
+    background-position: center;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    opacity: 0.8;
+    text-align: center;
+  }
+  
+  .home-h2 {
+    font-family: cursive;
+    font-weight: 300;
+    margin: 20px 0;
+  }
+  
+  .shadow-box h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .button {
+    margin: 10px;
+    background-color: #fa5c5c;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+    box-shadow: 0 10px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
+    font-size: 18px;
+    font-weight: 100;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #ff7f7f;
+  }
+  
+  @keyframes moveText {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+  }
+  
+  .animated-text {
+    animation: moveText 2s ease infinite;
+  }
+  
+  @media (max-width: 768px) {
+    .shadow-box {
+      padding: 40px 15px;
+      height: 90vh;
+    }
+  
+    .shadow-box h1 {
+      font-size: 2rem;
+    }
+    .shadow-box h3{
+      margin-top: 3rem;
+    }
+  
+    .home-h2 {
+      font-size: 2rem;
+
+    }
+  
+    .button {
+      font-size: 16px;
+      padding: 8px 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .shadow-box {
+      padding: 30px 10px;
+    }
+  
+    .shadow-box h1 {
+      font-size: 1.5rem;
+    }
+  
+    .home-h2 {
+      font-size: 1rem;
+      line-height: 1.4;
+    }
+  
+    .button {
+      font-size: 14px;
+      padding: 6px 10px;
+    }
+  }
+  
