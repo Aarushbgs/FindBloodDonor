@@ -8,7 +8,7 @@ const app = express();
 
 // CORS configuration
 const corsOptions = {
-  origin: 'http://localhost:3000', // Ensure this matches your frontend's URL
+  origin: 'https://findblooddonor.netlify.app', // Ensure this matches your frontend's URL
   optionsSuccessStatus: 200
 };
 
